@@ -14,16 +14,25 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class="container" id="home">
     <nav class="navbar">
       <div class="logo">
         <h2>New <span class="highlight">Steps</span></h2>
       </div>
+
+      <input type="checkbox" name="" id="menu-toggler">
+      <label for="menu-toggler" class="menu-toggler-label">
+
+        <div class="toggler-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </label>
+
       <ul class="navigation">
-        <li><a href="#"> Home</a></li>
-        <li><a href="#"> Shoes</a></li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Contact</a></li>
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#shoes"> Shoes</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#contact"> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -46,7 +55,7 @@
     </section>
 
     <!-- men-shoes  -->
-    <section class="men-shoes">
+    <section id="shoes">
       <div class="section-title">
         <h2><span class="highlight">Men</span> Shoes</h2>
       </div>
@@ -132,11 +141,8 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- women-shoes -->
-
-    <section class="women-shoes">
+      <!-- women-shoes -->
       <div class="section-title">
         <h2><span class="highlight">Women</span> Shoes</h2>
       </div>
@@ -224,7 +230,7 @@
       </div>
     </section>
     <!-- about us  -->
-    <section>
+    <section id="about">
       <div class="section-title">
         <h2><span class="highlight">About </span>us</h2>
       </div>
@@ -265,7 +271,7 @@
     </section>
 
     <!-- contact  -->
-    <section>
+    <section id="contact">
       <div class="section-title">
         <h2><span class="highlight">Contact </span>us</h2>
       </div>
@@ -284,6 +290,41 @@
         </iframe>
 
       </div>
+    </section>
+
+    <section class="rev-container">
+
+      <div class="rev-card">
+        <div class="rev-left">
+          <img src="../image/react.png" alt="">
+        </div>
+        <div class="rev-right">
+          <h1>Customer review</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, non Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Commodi.</p>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-left">
+          <img src="../image/react.png" alt="">
+        </div>
+        <div class="rev-right">
+          <h1>Customer review</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, non Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Commodi.</p>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-left">
+          <img src="../image/react.png" alt="">
+        </div>
+        <div class="rev-right">
+          <h1>Customer review</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, non Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Commodi.</p>
+        </div>
+      </div>
+
     </section>
   </main>
   <footer class="footer">
