@@ -1,0 +1,130 @@
+.product-card{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  height: 450px;
+  width: 320px;
+  background: rgb(46, 43, 43);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(145, 219, 27);
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(150px at 80% 20%);
+  transition: .5s;
+}
+
+.product-card:hover::before{
+  clip-path: circle(300px at 80% -10%);
+}
+
+.card-img{
+  max-width: 250px;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translateY(120%);
+  transition: .6s;
+}
+.card-img img{
+  width: 100%;
+  transform: rotate(-25deg);
+
+}
+
+.product-card:hover .card-img{
+  transform: translateY(20%);
+}
+
+.card-body{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  transition: .7s;
+}
+
+.product-card:hover .card-body{
+  height: 200px;
+}
+
+/* .card-body h2{
+  margin: 50px 0px 0px 0px;
+} */
+
+.card-body h4{
+  margin: 7px 0px;
+}
+
+
+.sizes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizes span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background: rgb(255, 255, 255);
+  color: rgb(39, 37, 37);
+  margin-left: 5px;
+  border-radius: 5px;
+  transition-delay: .7s;
+}
+
+.colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-delay: .5s;
+}
+
+.colors span{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.colors span:nth-child(2){
+  background-color: rgb(145, 219, 27); ;
+}
+.colors span:nth-child(3){
+  background-color: rgb(15, 69, 185); ;
+}
+.colors span:nth-child(4){
+  background-color: rgb(225, 236, 65); ;
+}
+
+.buy-btn{
+  border: 0;
+  outline: 0;
+  background: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.product-details{
+  opacity: 0;
+  transition: .6s;
+}
+.product-card:hover .product-details{
+  opacity: 1;
+}
