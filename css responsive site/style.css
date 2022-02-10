@@ -148,6 +148,7 @@ h1, h2{
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 10px 10px rgb(66, 54, 54);
 }
 
 .product-card::before{
@@ -329,6 +330,14 @@ h1, h2{
 }
 
 .input-item.btn{
+  background-color: rgba(76, 199, 38, 0.856);
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  width: 120px;
+  border-radius: 20px;
+  padding:  13px 20px ;
   cursor: pointer;
 }
 
@@ -340,7 +349,8 @@ h1, h2{
 /* footer  */
 .footer{
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,6 +367,10 @@ h1, h2{
   width: 100%;
   
 }
+.rev-container h1{
+  font-size: 40px;
+  margin: 5px 0px;
+}
 
 
 .rev-card{
@@ -369,7 +383,7 @@ h1, h2{
 .rev-left{
   /* border: 1px solid rgb(48, 43, 43); */
   width: 100%;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .rev-right{
@@ -379,7 +393,7 @@ h1, h2{
   justify-content: center;
   /* align-items: center; */
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   
   
 }
@@ -399,20 +413,99 @@ h1, h2{
   padding: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+/* newsletter  */
+.newsletter{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./../image/nike-bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+/* galary  */
+.galary-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+  width: 100%;
+  /* border: 5px solid rgb(46, 36, 36); */
+
+}
+
+.grid-item{
+  background-color: rgb(211, 243, 137);
+  /* border: 1px solid red; */
+  padding: 20px;
+  
+}
+
+.item-1{
+  grid-row: 1/3;
+  background-image: url(/image/galary2.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: repeat;
+  object-fit: cover;
+}
+
+.item-2{
+  background-image: url(/image/galary4.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.item-3{
+  background-image: url(/image/galary3.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.item-4{
+ grid-column: span 2;
+ background-image: url(/image/galary1.jpg);
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ object-fit: contain;
 }
 
 
+
 @media (max-width:1050px){
-  .card-container{
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 18px;
     place-items: center;
   }
 }
 
+
 @media (max-width:720px){
   .card-container, .banner, .about, .contact{
     grid-template-columns: 1fr;
+ 
+  }
+}
+
+@media (max-width:720px){
+  .galary-grid-container{
+
+ 
+  }
+}
+@media (max-width:480px){
+  .rev-container{
+   grid-row-gap: 10px;
  
   }
 }
@@ -434,7 +527,8 @@ h1, h2{
     width: 100%;
     height: 560px;
     padding-top: 10px;
-    background-size: contain;
+    /* background-size: contain; */
+    object-fit: cover;
 
   
     }
@@ -445,14 +539,21 @@ h1, h2{
     flex-direction: column;
    
   }
+  .rev-container h1{
+    font-size: 26px;
+  }
+  .rev-container p{
+    font-size: 14px;
+  }
 }
+
 @media (max-width:480px){
   .rev-card img{
   width: 100%;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 5px;
   align-items: center;
-  background-size: cover;
+  object-fit: cover;
 
   }
 }
